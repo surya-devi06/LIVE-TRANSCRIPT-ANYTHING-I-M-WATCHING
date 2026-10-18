@@ -6,7 +6,17 @@
 // to GitHub Releases and update DOWNLOAD_URL with the release link.
 // ─────────────────────────────────────────────────────────────
 
-const downloadConfig = {
+export interface DownloadConfigType {
+  VERSION: string;
+  DOWNLOAD_URL: string;
+  FILE_SIZE: string;
+  OS: string;
+  REPO_URL: string;
+  RELEASE_NOTES_URL: string;
+  CONTACT_EMAIL: string;
+}
+
+const downloadConfig: DownloadConfigType = {
   /** Semantic version of the current release */
   VERSION: "0.1.0",
 
@@ -31,7 +41,6 @@ const downloadConfig = {
 
   /** Contact email */
   CONTACT_EMAIL: "support@livetranscript.local",
-} as const;
+};
 
 export default downloadConfig;
-export type DownloadConfig = typeof downloadConfig;

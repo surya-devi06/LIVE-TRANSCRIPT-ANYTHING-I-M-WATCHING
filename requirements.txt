@@ -1,0 +1,13 @@
+# Phase 1: Core desktop foundation
+PySide6>=6.6.0
+python-dotenv>=1.0.0
+pytest>=8.0.0
+pytest-qt>=4.3.0
+
+# Phase 2: Audio Capture & Processing
+soundcard>=0.4.6
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Phase 3: Local Speech Recognition
+faster-whisper>=1.0.0

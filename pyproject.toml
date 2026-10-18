@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "live-transcript"
+version = "0.1.0"
+description = "Real-Time AI Transcription, Translation, and Language Learning Desktop Application"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Live Transcript Team" }
+]
+dependencies = [
+    "PySide6>=6.6.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-qt>=4.3.0",
+]
+audio = [
+    "sounddevice>=0.4.6",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0",
+]
+ai = [
+    "faster-whisper>=1.0.0",
+    "torch>=2.0.0",
+]
+
+[project.scripts]
+live-transcript = "live_transcript.bootstrap:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-p no:anyio"
