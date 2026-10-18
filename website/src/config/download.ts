@@ -21,14 +21,12 @@ const downloadConfig: DownloadConfigType = {
   VERSION: "0.1.0",
 
   /**
-   * Direct download URL for the Windows installer.
-   * - Locally: served directly from `/LiveTranscript_Installer.exe`
-   * - In production: update to your GitHub Release asset URL when published
+   * Direct download URL for the Windows installer from GitHub Releases.
    */
-  DOWNLOAD_URL: "/LiveTranscript_Installer.exe",
+  DOWNLOAD_URL: "https://github.com/surya-devi06/LIVE-TRANSCRIPT-ANYTHING-I-M-WATCHING/releases/download/v0.1.0/LiveTranscript_Installer.exe",
 
   /** Human-readable file size shown across the site */
-  FILE_SIZE: "384 MB",
+  FILE_SIZE: "366 MB",
 
   /** Supported operating system label */
   OS: "Windows 10 / 11 (64-bit)",
