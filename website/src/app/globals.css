@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #6366f1;
+  --accent-light: #818cf8;
+  --accent-muted: #312e81;
+}
+
+/* Smooth scrolling offset for fixed navbar */
+html {
+  scroll-padding-top: 72px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f1117; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #818cf8, #a78bfa, #c084fc);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(49, 46, 129, 0.2), 0 8px 10px -6px rgba(49, 46, 129, 0.2);
+}
